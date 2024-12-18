@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseApiUrl: process.env['baseApiUrl'],
+  baseApiUrl: "https://jrm-labs-api.jrm-labs.com",
 };
