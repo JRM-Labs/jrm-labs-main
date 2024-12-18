@@ -1,0 +1,9 @@
+<!-- Services Section -->
+<section class="services">
+  <h2>Our Services</h2>
+  <ul class="list-group list-group-flush">
+    @for (service of (services$ | async); track service) {
+      <li class="list-group-item">{{service.Title}}</li>
+    }
+  </ul>
+</section>

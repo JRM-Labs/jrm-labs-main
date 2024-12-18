@@ -1,0 +1,65 @@
+<app-home-page-hero></app-home-page-hero>
+
+<div class="container">
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Choose Us?</h2>
+    <p>We build <strong>simple</strong> web apps designed for your unique needs. Not all business needs require all the bells and whistles. Sometimes, simple is better. Whether you're a startup or an established enterprise, we provide end-to-end solutions from ideation to deployment.</p>
+  </section>
+
+  <app-home-page-services></app-home-page-services>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea id="message" class="form-control" rows="3" placeholder="Tell us about your project" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </section>
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-5 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+<!--      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">-->
+<!--        <svg class="bi" width="30" height="24">-->
+<!--          <use xlink:href="#bootstrap"/>-->
+<!--        </svg>-->
+<!--      </a>-->
+      <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 JRM Labs, LLC.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a class="text-body-secondary" href="#">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+      </li>
+      <li class="ms-3"><a class="text-body-secondary" href="#">
+        <i class="bi bi-instagram"></i>
+      </a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#">
+        <i class="bi bi-facebook"></i>
+      </a></li>
+      <li class="ms-3"><a class="text-body-secondary" href="#">
+        <i class="bi bi-linkedin"></i>
+      </a></li>
+    </ul>
+  </footer>
+
+</div>

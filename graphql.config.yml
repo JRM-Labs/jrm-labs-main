@@ -1,0 +1,6 @@
+schema: http://localhost:1338/graphql
+documents: '**/*.graphql'
+extensions:
+  endpoints:
+    jrm-labs:
+      url: http://localhost:1338/graphql
