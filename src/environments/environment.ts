@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // baseApiUrl: "http://localhost:1338/",
-  baseApiUrl: "https://jrm-labs-api.jrm-labs.com",
+  baseApiUrl: "http://localhost:1338",
+  // baseApiUrl: "https://jrm-labs-api.jrm-labs.com",
 };
 
 /*

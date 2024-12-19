@@ -7,6 +7,7 @@ import {HomePageHeroComponent} from './home-page-hero/home-page-hero.component';
 import {GraphQLModule} from './graphql.module';
 import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {HomePageServicesComponent} from './home-page-services/home-page-services.component';
+import {ContactFormComponent} from "./contact-form/contact-form.component";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {HomePageServicesComponent} from './home-page-services/home-page-services
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GraphQLModule
+    GraphQLModule,
+    ContactFormComponent
   ],
   providers: [
     provideHttpClient(withInterceptorsFromDi())
