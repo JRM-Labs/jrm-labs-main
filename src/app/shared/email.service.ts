@@ -18,10 +18,7 @@ export class EmailService {
   constructor() { }
 
   sendEmail(data: NewEmailData) {
-    console.log(data);
-    return this.http.post(`${environment.baseApiUrl}/api/send-email`, data).pipe(
-      tap((res) => console.log(res)),
-    );
+    return this.http.post(`${environment.baseApiUrl}/api/send-email`, data);
   }
 
 }

@@ -21,11 +21,10 @@ export class ContactFormComponent {
   });
 
   handleSubmit() {
-    console.log(this.contactForm);
     this.emailService.sendEmail({
       sender: this.contactForm.value.name,
       from: this.contactForm.value.email,
       message: this.contactForm.value.message,
-    }).subscribe();
+    }).subscribe(() => this.contactForm.reset());
   }
 }
