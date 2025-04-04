@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseApiUrl: "http://localhost:1338",
+  baseApiUrl: "http://localhost:3000",
   // baseApiUrl: "https://jrm-labs-api.jrm-labs.com",
 };
 

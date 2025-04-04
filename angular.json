@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/aos/dist/aos.css",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ],
             "browser": "src/main.ts",
             "stylePreprocessorOptions": {
               "sass": {
@@ -45,7 +49,8 @@
                 ]
               },
               "includePaths": [
-                "."
+                ".",
+                "src/assets"
               ]
             }
           },

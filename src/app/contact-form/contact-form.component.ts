@@ -22,9 +22,12 @@ export class ContactFormComponent {
 
   handleSubmit() {
     this.emailService.sendEmail({
-      sender: this.contactForm.value.name,
-      from: this.contactForm.value.email,
+      name: this.contactForm.value.name,
+      email: this.contactForm.value.email,
       message: this.contactForm.value.message,
-    }).subscribe(() => this.contactForm.reset());
+    }).subscribe((response) => {
+      console.log(response);
+      this.contactForm.reset();
+    });
   }
 }

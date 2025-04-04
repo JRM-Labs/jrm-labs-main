@@ -1,0 +1,22 @@
+<section class="services container text-center">
+  <h2 class="section-title mb-5">What We Do</h2>
+  <div class="row justify-content-center">
+    @for (service of services; let i = $index; track service) {
+      <div
+        class="col-12 col-md-6 col-lg-4 mb-4"
+        [attr.data-aos]="'fade-up'"
+        [attr.data-aos-delay]="i * 100"
+      >
+        <div class="card service-card h-100">
+          <div class="card-body">
+            <div class="service-icon mb-3">
+              <i class="bi {{service.Icon}}"></i>
+            </div>
+            <h5 class="card-title">{{service.Title}}</h5>
+            <p class="card-text" *ngIf="service.Description">{{service.Description}}</p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>

@@ -1,0 +1,72 @@
+@use "color-variables" as colors;
+
+.service-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  color: colors.$text-color;
+  box-shadow: 0 8px 20px rgba(colors.$electric-purple, 0.15);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(colors.$electric-purple, 0.25);
+  }
+
+  .service-icon {
+    font-size: 2.5rem;
+    color: colors.$cool-cyan;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+}
+
+
+//.section-title {
+//  font-size: 2.5rem;
+//  background: linear-gradient(90deg, colors.$electric-purple, colors.$cool-cyan);
+//  -webkit-background-clip: text;
+//  -webkit-text-fill-color: transparent;
+//  font-weight: 600;
+//}
+//
+//.service-card {
+//  background: rgba(255, 255, 255, 0.06);
+//  backdrop-filter: blur(12px);
+//  border: 1px solid rgba(255, 255, 255, 0.12);
+//  border-radius: 1rem;
+//  padding: 2rem 1.5rem;
+//  transition: all 0.3s ease-in-out;
+//  color: colors.$text-color;
+//  box-shadow: 0 8px 20px rgba(colors.$electric-purple, 0.15);
+//
+//  &:hover {
+//    transform: translateY(-8px);
+//    box-shadow: 0 15px 30px rgba(colors.$electric-purple, 0.25);
+//  }
+//
+//  .service-icon {
+//    font-size: 2rem;
+//    color: colors.$cool-cyan;
+//  }
+//
+//  .card-title {
+//    font-size: 1.25rem;
+//    font-weight: 600;
+//  }
+//
+//  .card-text {
+//    font-size: 0.95rem;
+//    opacity: 0.8;
+//  }
+//}

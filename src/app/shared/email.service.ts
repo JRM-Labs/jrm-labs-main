@@ -4,8 +4,8 @@ import {environment} from "../../environments/environment";
 import {tap} from "rxjs";
 
 export interface NewEmailData {
-  sender: string;
-  from: string;
+  name: string;
+  email: string;
   message: string;
 }
 
@@ -18,7 +18,7 @@ export class EmailService {
   constructor() { }
 
   sendEmail(data: NewEmailData) {
-    return this.http.post(`${environment.baseApiUrl}/api/send-email`, data);
+    return this.http.post(`${environment.baseApiUrl}/send-email`, data);
   }
 
 }

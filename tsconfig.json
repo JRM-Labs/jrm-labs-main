@@ -22,7 +22,7 @@
       "dom",
       "esnext.asynciterable"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
