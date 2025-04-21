@@ -1,22 +1,59 @@
-<section class="services container text-center">
-  <h2 class="section-title mb-5">What We Do</h2>
-  <div class="row justify-content-center">
-    @for (service of services; let i = $index; track service) {
-      <div
-        class="col-12 col-md-6 col-lg-4 mb-4"
-        [attr.data-aos]="'fade-up'"
-        [attr.data-aos-delay]="i * 100"
-      >
-        <div class="card service-card h-100">
-          <div class="card-body">
-            <div class="service-icon mb-3">
-              <i class="bi {{service.Icon}}"></i>
-            </div>
-            <h5 class="card-title">{{service.Title}}</h5>
-            <p class="card-text" *ngIf="service.Description">{{service.Description}}</p>
-          </div>
-        </div>
-      </div>
-    }
+<h2 class="pb-2 border-bottom">What we do.</h2>
+<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+  <div class="feature col">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+    </div>
+    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    <a href="#" class="icon-link">
+      Call to action
+      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+    </a>
   </div>
-</section>
+  <div class="feature col">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+    </div>
+    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    <a href="#" class="icon-link">
+      Call to action
+      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+    </a>
+  </div>
+  <div class="feature col">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+      <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+    </div>
+    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    <a href="#" class="icon-link">
+      Call to action
+      <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+    </a>
+  </div>
+</div>
+
+<!--<section class="services container text-center">-->
+<!--  <h2 class="section-title mb-5">What We Do</h2>-->
+<!--  <div class="row justify-content-center">-->
+<!--    @for (service of services; let i = $index; track service) {-->
+<!--      <div-->
+<!--        class="col-12 col-md-6 col-lg-4 mb-4"-->
+<!--        [attr.data-aos]="'fade-up'"-->
+<!--        [attr.data-aos-delay]="i * 100"-->
+<!--      >-->
+<!--        <div class="card service-card h-100">-->
+<!--          <div class="card-body">-->
+<!--            <div class="service-icon mb-3">-->
+<!--              <i class="bi {{service.Icon}}"></i>-->
+<!--            </div>-->
+<!--            <h5 class="card-title">{{service.Title}}</h5>-->
+<!--            <p class="card-text" *ngIf="service.Description">{{service.Description}}</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    }-->
+<!--  </div>-->
+<!--</section>-->
