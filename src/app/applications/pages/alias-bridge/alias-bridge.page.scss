@@ -1,0 +1,58 @@
+@use "color-variables" as colors;
+
+.download-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.download-section {
+  margin: 2em 0;
+  min-height: 50px; /* Prevent layout jump */
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 0.5em;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.primary-button {
+  background-color: colors.$cool-cyan;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #0056b3;
+}
+
+.manual-links {
+  margin-top: 2em;
+  text-align: left;
+  display: inline-block; /* Center the block */
+}
+
+.manual-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.manual-links li {
+  margin-bottom: 0.5em;
+}
+
+.notes {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 1em;
+}

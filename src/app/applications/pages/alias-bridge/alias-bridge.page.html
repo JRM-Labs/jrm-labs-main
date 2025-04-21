@@ -1,0 +1,60 @@
+<!-- src/app/pages/download/download.component.html -->
+<div class="download-container">
+  <header>
+    <h1>Download AliasBridge</h1>
+    <p>Get the latest version ({{ currentVersion }}) of the simple, cross-platform alias manager.</p>
+  </header>
+
+  <main>
+    <h2>Get AliasBridge</h2>
+
+    <div class="download-section">
+      <!-- Loading State -->
+      <div *ngIf="detectedOS === 'loading'">
+        <p>Detecting your operating system...</p>
+      </div>
+
+      <!-- Detected OS Button -->
+      <div *ngIf="detectedOS === 'mac'">
+        <a [href]="macDownloadUrl" class="button primary-button">
+          Download for macOS (.dmg)
+        </a>
+      </div>
+      <div *ngIf="detectedOS === 'windows'">
+        <a [href]="windowsDownloadUrl" class="button primary-button">
+          Download for Windows (.exe)
+        </a>
+      </div>
+      <div *ngIf="detectedOS === 'linux'">
+        <a [href]="linuxDownloadUrl" class="button primary-button">
+          Download for Linux (.AppImage)
+        </a>
+      </div>
+
+      <!-- Fallback/Unknown State -->
+      <div *ngIf="detectedOS === 'unknown'">
+        <p>Could not automatically detect your OS. Please select a download below.</p>
+      </div>
+    </div>
+
+    <div class="manual-links">
+      <p>Or download directly:</p>
+      <ul>
+        <li><a [href]="macDownloadUrl">macOS ({{ currentVersion }}.dmg)</a></li>
+        <li><a [href]="windowsDownloadUrl">Windows ({{ currentVersion }}.exe)</a></li>
+        <li><a [href]="linuxDownloadUrl">Linux ({{ currentVersion }}.AppImage)</a></li>
+        <!-- Add links for .deb/.rpm if you build and host them -->
+        <!-- <li><a [href]="linuxDebUrl">Linux (.deb)</a></li> -->
+        <!-- <li><a [href]="linuxRpmUrl">Linux (.rpm)</a></li> -->
+      </ul>
+    </div>
+
+    <p class="notes">
+      <strong>Important Note:</strong> Initial versions may not be code-signed. Your operating system might display security warnings during download or installation. We are working on implementing code signing for future releases.
+    </p>
+  </main>
+
+  <footer>
+    <!-- Your website footer -->
+  </footer>
+</div>

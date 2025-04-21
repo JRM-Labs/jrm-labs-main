@@ -1,0 +1,29 @@
+<div class="container">
+  <header>
+    <h1>{{ appName }}</h1>
+    <p>{{ appSubtitle }}</p>
+  </header>
+
+  <main>
+    <!-- Render the main content from the Markdown file -->
+    <markdown [src]="markdownSrc"></markdown>
+
+    <!-- Download Section -->
+    <h2>Download {{ appName }} v{{ currentVersion }}</h2>
+    <div class="download-section">
+      <!-- OS Specific Buttons based on detectedOS -->
+      <div *ngIf="detectedOS === 'mac' && downloadLinks.mac">
+        <a [href]="downloadLinks.mac" class="button primary-button">Download for macOS</a>
+      </div>
+      <div *ngIf="detectedOS === 'windows' && downloadLinks.windows">
+        <a [href]="downloadLinks.windows" class="button primary-button">Download for Windows</a>
+      </div>
+      <div *ngIf="detectedOS === 'linux' && downloadLinks.linux">
+        <a [href]="downloadLinks.linux" class="button primary-button">Download for Linux</a>
+      </div>
+      <div *ngIf="detectedOS === 'unknown' || detectedOS === 'loading'">
+        <p>Select your platform below:</p>
+      </div>
+    </div>
+  </main>
+</div>

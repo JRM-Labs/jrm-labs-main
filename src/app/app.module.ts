@@ -7,6 +7,7 @@ import {GraphQLModule} from './graphql.module';
 import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {ContactFormComponent} from "./contact-form/contact-form.component";
 import {FooterComponent} from "./footer/footer.component";
+import {provideMarkdown} from "ngx-markdown";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FooterComponent} from "./footer/footer.component";
     FooterComponent,
   ],
   providers: [
-    provideHttpClient(withInterceptorsFromDi())
+    provideHttpClient(withInterceptorsFromDi()),
+    provideMarkdown()
   ]
 })
 export class AppModule {
