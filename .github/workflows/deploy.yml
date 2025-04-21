@@ -30,6 +30,3 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: jrm-site
-          directory: dist  # or your actual output directory
-          branch: ${{ github.ref_name }}
