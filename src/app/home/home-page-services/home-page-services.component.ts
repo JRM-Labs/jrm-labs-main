@@ -24,7 +24,7 @@ export class HomePageServicesComponent implements OnInit {
     { Title: 'Legacy Application Updating', Icon: 'bi-arrow-repeat', Description: 'Modernize and future-proof old tech stacks.' },
   ];
 
-  constructor(private servicesGQL: ServicesGQL) {
+  constructor() {
   }
 
   ngOnInit(): void {

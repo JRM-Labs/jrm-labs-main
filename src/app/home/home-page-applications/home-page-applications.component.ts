@@ -18,6 +18,13 @@ export class HomePageApplicationsComponent {
       link: '/apps/alias-bridge',
       techStack: ['Angular', 'Electron', 'Tailwind CSS', 'PrimeNG', 'NodeJS', 'Firestore']
     },
+    {
+      title: 'AppSpnd',
+      description: 'Apple Spending management made easy.',
+      image: '',
+      link: '/apps/appspnd',
+      techStack: ['Angular', 'Ionic', 'Tailwind CSS', 'PrimeNG', 'NodeJS', 'Firestore']
+    },
     // {
     //   title: 'Linzly',
     //   description: 'A personal resume and portfolio builder for modern professionals.',
