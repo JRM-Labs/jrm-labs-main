@@ -1,5 +1,4 @@
-import {Component, OnInit} from '@angular/core';
-import AOS from 'aos';
+import {Component} from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -7,14 +6,6 @@ import AOS from 'aos';
     styleUrls: ['./app.component.scss'],
     standalone: false
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'jrm';
-
-  ngOnInit() {
-    AOS.init({
-      once: true,
-      duration: 800,
-      easing: 'ease-in-out',
-    });
-  }
 }
